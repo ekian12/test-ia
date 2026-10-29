@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <title>Contacto a usuarios | EmuFlash Nexus</title>
+    <meta name="description" content="Página de contacto a usuarios de EmuFlash Nexus. Conoce al equipo y contacta con la comunidad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/emubrowser.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="index.html">
+                <div class="brand-mark">EF</div>
+                <span>EmuFlash Nexus</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html#juegos-flash">Juegos Flash</a>
+                <a class="nav-link" href="index.html#videos-juegos">Vídeos</a>
+                <a class="nav-link" href="index.html#blog">Blog</a>
+                <a class="nav-link active" href="contacto-usuarios.html">Contacto a usuarios</a>
+                <a class="nav-link" href="metas-importantes.html">Metas más importantes</a>
+                <div class="nav-dropdown">
+                    <a class="nav-link" href="#">Legales ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="aviso-legal.html">Aviso Legal</a>
+                        <a href="politica-privacidad.html">Política de Privacidad</a>
+                        <a href="politica-cookies.html">Política de Cookies</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Contacto a usuarios</h2>
+                        <p>Conecta con la comunidad de EmuFlash Nexus</p>
+                    </div>
+                </header>
+                <div class="contact-users">
+                    <div class="contact-users-info">
+                        <span class="hero-kicker">COMUNIDAD</span>
+                        <h2>Equipo y canales de contacto</h2>
+                        <p style="color: var(--text-sub);">
+                            Esta página está dedicada al contacto directo con usuarios. Aquí puedes conocer a los responsables
+                            del proyecto, colaborar y ponerte en contacto para sugerencias, reportes o colaboraciones.
+                        </p>
+                        <div class="contact-card">
+                            <h4>Información general</h4>
+                            <p>Email: comunidad@emuflashnexus.local</p>
+                            <p>Discord: EmuFlash Nexus Community</p>
+                            <p>Soporte: Atención a usuarios y moderación</p>
+                        </div>
+                    </div>
+                    <div class="contact-users-cards">
+                        <article class="contact-card">
+                            <h4>Moderación</h4>
+                            <p style="color: var(--text-sub);">Encargado de mantener un ambiente sano y respetuoso.</p>
+                            <p>Contacto: mod@emuflashnexus.local</p>
+                        </article>
+                        <article class="contact-card">
+                            <h4>Desarrollo Web</h4>
+                            <p style="color: var(--text-sub);">Mantenimiento, Ruffle, integración y mejoras.</p>
+                            <p>Contacto: dev@emuflashnexus.local</p>
+                        </article>
+                        <article class="contact-card">
+                            <h4>Contenido & Vídeos</h4>
+                            <p style="color: var(--text-sub);">Selección de gameplays, destacados y anuncios.</p>
+                            <p>Contacto: media@emuflashnexus.local</p>
+                        </article>
+                        <article class="contact-card">
+                            <h4>Relaciones con usuarios</h4>
+                            <p style="color: var(--text-sub);">Sugerencias, feedback y peticiones de la comunidad.</p>
+                            <p>Contacto: users@emuflashnexus.local</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Formulario de reporte de errores</h2>
+                        <p>Ayúdanos a mejorar reportando fallos</p>
+                    </div>
+                </header>
+                <div class="forms-grid">
+                    <article class="form-card" style="grid-column: 1 / span 12;">
+                        <header class="form-header">
+                            <h3>Reporte de errores</h3>
+                            <p style="color: var(--text-sub);">Incluye detalles para poder reproducir el error</p>
+                        </header>
+                        <form class="form-body">
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="reporte-nombre">Nombre o alias</label>
+                                    <input id="reporte-nombre" type="text" placeholder="Tu nombre o alias">
+                                </div>
+                                <div class="field">
+                                    <label for="reporte-email">Correo electrónico</label>
+                                    <input id="reporte-email" type="email" placeholder="correo@ejemplo.com">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="reporte-pagina">Página donde ocurre</label>
+                                <select id="reporte-pagina">
+                                    <option>index.html</option>
+                                    <option>juegos-flash / ruffle</option>
+                                    <option>videos-juegos</option>
+                                    <option>blog</option>
+                                    <option>contacto-usuarios.html</option>
+                                    <option>metas-importantes.html</option>
+                                    <option>Otra</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="reporte-desc">Descripción del error</label>
+                                <textarea id="reporte-desc" placeholder="Describe qué sucede, navegador, pasos para reproducir..."></textarea>
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Acepto la Política de Privacidad para el tratamiento de estos datos.</span>
+                            </label>
+                            <button class="btn submit">Enviar reporte</button>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Formulario de comentarios</h2>
+                        <p>Déjanos tu opinión sobre EmuFlash Nexus</p>
+                    </div>
+                </header>
+                <div class="forms-grid">
+                    <article class="form-card" style="grid-column: 1 / span 12;">
+                        <header class="form-header">
+                            <h3>Comentarios</h3>
+                            <p style="color: var(--text-sub);">Tu feedback nos ayuda a seguir mejorando</p>
+                        </header>
+                        <form class="form-body">
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="com-nombre">Nombre o alias</label>
+                                    <input id="com-nombre" type="text" placeholder="Tu nombre o alias">
+                                </div>
+                                <div class="field">
+                                    <label for="com-email">Correo electrónico (opcional)</label>
+                                    <input id="com-email" type="email" placeholder="correo@ejemplo.com">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="com-tema">Tema</label>
+                                <select id="com-tema">
+                                    <option>Sugerencia</option>
+                                    <option>Felicitación</option>
+                                    <option>Pregunta</option>
+                                    <option>Colaboración</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="com-mensaje">Comentario</label>
+                                <textarea id="com-mensaje" placeholder="Escribe tu comentario aquí..."></textarea>
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>He leído y acepto la Política de Privacidad.</span>
+                            </label>
+                            <button class="btn submit">Enviar comentario</button>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <div class="brand-mark">EF</div>
+                    <span>EmuFlash Nexus</span>
+                </a>
+                <p style="color: var(--text-sub);">Plataforma inspirada en EmuBrowser con juegos Flash, Ruffle, vídeos, anuncios y comunidad.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="contacto-usuarios.html">Contacto a usuarios</a></li>
+                    <li><a href="metas-importantes.html">Metas más importantes</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legales</h4>
+                <ul>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 EmuFlash Nexus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        navToggle.addEventListener('click', () => mainNav.classList.toggle('active'));
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => { if (window.innerWidth < 920) mainNav.classList.remove('active'); });
+        });
+    </script>
+</body>
+
+</html>

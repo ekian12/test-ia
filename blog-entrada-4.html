@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <title>Crear una comunidad de usuarios | Blog EmuFlash Nexus</title>
+    <meta name="description" content="Importancia de reportes, comentarios y contacto a usuarios.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/emubrowser.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="index.html">
+                <div class="brand-mark">EF</div>
+                <span>EmuFlash Nexus</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html#juegos-flash">Juegos Flash</a>
+                <a class="nav-link" href="index.html#videos-juegos">Vídeos</a>
+                <a class="nav-link active" href="index.html#blog">Blog</a>
+                <a class="nav-link" href="contacto-usuarios.html">Contacto a usuarios</a>
+                <a class="nav-link" href="metas-importantes.html">Metas más importantes</a>
+                <div class="nav-dropdown">
+                    <a class="nav-link" href="#">Legales ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="aviso-legal.html">Aviso Legal</a>
+                        <a href="politica-privacidad.html">Política de Privacidad</a>
+                        <a href="politica-cookies.html">Política de Cookies</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <article class="blog-preview-card" style="max-width: 900px; margin: 0 auto;">
+                    <div class="blog-preview-thumb">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80" alt="Comunidad">
+                    </div>
+                    <div class="blog-preview-content" style="gap: 1.2rem;">
+                        <div class="blog-meta">
+                            <span class="tag">Comunidad</span>
+                            <span>28 de Octubre, 2026</span>
+                        </div>
+                        <h1 style="font-size: clamp(2rem, 5vw, 3.2rem);">Crear una comunidad de usuarios</h1>
+                        <p style="color: var(--text-sub); font-size: 1.1rem;">El corazón de EmuFlash Nexus es su comunidad.</p>
+                        <div style="display: grid; gap: 1rem; color: var(--text-sub);">
+                            <p>Para crecer de forma sana necesitamos escuchar a los usuarios. Por eso hemos creado la página de <a href="contacto-usuarios.html" style="color: var(--accent);">Contacto a usuarios</a> con formularios específicos.</p>
+                            <p><strong>Formulario de reporte de errores:</strong> Permite informar fallos con página, descripción y datos de contacto para poder solucionarlos rápidamente.</p>
+                            <p><strong>Formulario de comentarios:</strong> Espacio para sugerencias, felicitaciones, preguntas o colaboraciones.</p>
+                            <p>Ambos formularios están presentes en todas las páginas excepto en index.html, tal como se solicita. Esto garantiza que la comunidad siempre tenga un canal accesible para mejorar el proyecto.</p>
+                        </div>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a class="btn btn-ghost" href="blog-entrada-3.html">Entrada anterior</a>
+                            <a class="btn btn-primary" href="index.html#blog">Volver al blog</a>
+                            <a class="btn btn-ghost" href="blog-entrada-5.html">Siguiente entrada</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html"><div class="brand-mark">EF</div><span>EmuFlash Nexus</span></a>
+                <p style="color: var(--text-sub);">Comunidad centrada en feedback y mejora continua.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="blog-entrada-1.html">El renacer de los juegos Flash</a></li>
+                    <li><a href="blog-entrada-2.html">EmuBrowser como inspiración</a></li>
+                    <li><a href="blog-entrada-3.html">Super Smash Flash 2: Historia y legado</a></li>
+                    <li><a href="blog-entrada-4.html">Crear una comunidad de usuarios</a></li>
+                    <li><a href="blog-entrada-5.html">Meta tags y experiencia retro</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legales</h4>
+                <ul>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><div class="container"><p>&copy; 2026 EmuFlash Nexus. Todos los derechos reservados.</p></div></div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        navToggle.addEventListener('click', () => mainNav.classList.toggle('active'));
+        document.querySelectorAll('.nav-link').forEach(link => { link.addEventListener('click', () => { if (window.innerWidth < 920) mainNav.classList.remove('active'); }); });
+    </script>
+</body>
+
+</html>

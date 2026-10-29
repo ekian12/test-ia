@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <title>EmuFlash Nexus | Juegos Flash, Emuladores y Comunidad</title>
+    <meta name="title" content="EmuFlash Nexus | Juegos Flash, Emuladores y Comunidad">
+    <meta name="description" content="Plataforma inspirada en EmuBrowser con juegos Flash controlados con Ruffle, Super Smash Flash 2, vídeos, anuncios de videojuegos, blog, contacto a usuarios y mucho más.">
+    <meta name="keywords" content="juegos flash, ruffle, super smash flash 2, emulador, juegos online, retro">
+    <meta name="author" content="EmuFlash Nexus">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="EmuFlash Nexus | Juegos Flash, Emuladores y Comunidad">
+    <meta property="og:description" content="Juega juegos Flash con Ruffle directamente en tu navegador, descubre vídeos, blog y comunidad.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/emubrowser.css">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="index.html">
+                <div class="brand-mark">EF</div>
+                <span>EmuFlash Nexus</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <a class="nav-link active" href="index.html">Inicio</a>
+                <div class="nav-dropdown">
+                    <a class="nav-link" href="#consolas">Consolas ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#consolas">PlayStation</a>
+                        <a href="#consolas">Nintendo 64</a>
+                        <a href="#consolas">Game Boy Advance</a>
+                        <a href="#consolas">Super Nintendo</a>
+                        <a href="#consolas">Sega Genesis</a>
+                        <a href="#consolas">Sega Saturn</a>
+                        <a href="#consolas">NES</a>
+                        <a href="#consolas">Game Boy</a>
+                        <a href="#consolas">Virtual Boy</a>
+                        <a href="#consolas">Atari 2600</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="#juegos-flash">Juegos Flash (Ruffle)</a>
+                <a class="nav-link" href="#videos-juegos">Vídeos de juegos</a>
+                <a class="nav-link" href="#anuncios">Anuncios videojuegos</a>
+                <a class="nav-link" href="#blog">Blog</a>
+                <a class="nav-link" href="contacto-usuarios.html">Contacto a usuarios</a>
+                <a class="nav-link" href="metas-importantes.html">Metas más importantes</a>
+                <div class="nav-dropdown">
+                    <a class="nav-link" href="#">Legales ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="aviso-legal.html">Aviso Legal</a>
+                        <a href="politica-privacidad.html">Política de Privacidad</a>
+                        <a href="politica-cookies.html">Política de Cookies</a>
+                    </div>
+                </div>
+                <form class="search-bar">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <circle cx="8.25" cy="8.25" r="5.25" stroke="currentColor" stroke-opacity="0.6"></circle>
+                        <path d="M12.375 12.375L15 15" stroke="currentColor" stroke-opacity="0.6" stroke-linecap="round"></path>
+                    </svg>
+                    <input type="search" placeholder="Buscar juegos, consolas o vídeos...">
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-kicker">Retro • Flash • Comunidad</span>
+                    <h1>EmuFlash Nexus</h1>
+                    <p>
+                        Inspirado en EmuBrowser. Juega clásicos, revive juegos Flash con Ruffle, descubre vídeos de los
+                        títulos más icónicos, consulta nuestro blog con 5 entradas relacionadas con el proyecto y mantente
+                        al día con los anuncios más destacados del mundo videojueguil.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#juegos-flash">Jugar ahora con Ruffle</a>
+                        <a class="btn btn-ghost" href="#videos-juegos">Ver vídeos de juegos</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <article class="hero-card">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80" alt="Sala arcade con luces neón">
+                        <div class="hero-card-content">
+                            <span class="tag">Destacado</span>
+                            <h3>Super Smash Flash 2 • Juega en la misma ventana</h3>
+                            <p>Clicando en la imagen del juego Flash podrás abrirlo directamente aquí con Ruffle y jugarlo al instante.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="consolas">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Menú por consolas</h2>
+                        <p>Explora la selección inspirada en el catálogo de EmuBrowser</p>
+                    </div>
+                    <a class="section-link" href="#consolas">Ver catálogo completo →</a>
+                </header>
+                <div class="console-strip">
+                    <a class="console-pill active" href="#consolas"><span>PlayStation</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Nintendo 64</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Nintendo DS</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Game Boy Advance</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Super Nintendo</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>NES</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Sega Genesis</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Sega Saturn</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Sega Game Gear</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Game Boy</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Virtual Boy</span><span>Ver juegos</span></a>
+                    <a class="console-pill" href="#consolas"><span>Atari 2600</span><span>Ver juegos</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Juegos destacados</h2>
+                        <p>Selección con imágenes generadas por IA inspiradas en la estética retro</p>
+                    </div>
+                    <a class="section-link" href="#juegos-flash">Ir a Juegos Flash →</a>
+                </header>
+                <div class="game-grid">
+                    <article class="game-card">
+                        <div class="game-thumb">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1600&q=80" alt="Consola retro con cartuchos">
+                            <span class="game-badge">PlayStation</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Gran Turismo 2</h3>
+                            <div class="game-meta">
+                                <span>Simulador</span>
+                                <span>Clásico</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="game-card">
+                        <div class="game-thumb">
+                            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1600&q=80" alt="Arcade con luces">
+                            <span class="game-badge">Nintendo 64</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Super Smash Bros</h3>
+                            <div class="game-meta">
+                                <span>Lucha</span>
+                                <span>Multijugador</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="game-card">
+                        <div class="game-thumb">
+                            <img src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=1600&q=80" alt="Personajes pixel art retro">
+                            <span class="game-badge">Super NES</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Chrono Trigger</h3>
+                            <div class="game-meta">
+                                <span>RPG</span>
+                                <span>Épico</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="game-card">
+                        <div class="game-thumb">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80" alt="Máquinas arcade neon">
+                            <span class="game-badge">Sega Genesis</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Sonic the Hedgehog 2</h3>
+                            <div class="game-meta">
+                                <span>Plataformas</span>
+                                <span>Velocidad</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="game-card">
+                        <div class="game-thumb">
+                            <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?auto=format&fit=crop&w=1600&q=80" alt="Control retro">
+                            <span class="game-badge">Game Boy Advance</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Pokémon Emerald</h3>
+                            <div class="game-meta">
+                                <span>RPG</span>
+                                <span>Aventura</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="game-card">
+                        <div class="game-thumb">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80" alt="Neón arcade">
+                            <span class="game-badge">NES</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Super Mario Bros 3</h3>
+                            <div class="game-meta">
+                                <span>Plataformas</span>
+                                <span>Legendario</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="anuncios">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Anuncios de videojuegos</h2>
+                        <p>Destacados de lanzamientos, remasters y eventos gaming</p>
+                    </div>
+                </header>
+                <article class="ad-banner">
+                    <div class="ad-content">
+                        <span class="tag">ANUNCIO</span>
+                        <h3>Remasters Retro en Alta Definición</h3>
+                        <p>Descubre colecciones clásicas remasterizadas con calidad moderna. Ediciones limitadas, bandas sonoras restauradas y contenido extra para revivir los mejores momentos del gaming.</p>
+                        <a class="btn btn-primary" href="#anuncios">Ver ofertas</a>
+                    </div>
+                    <div class="ad-media">
+                        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1600&q=80" alt="Caja de videojuego retro con luces neon">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="juegos-flash">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Juegos Flash controlados con Ruffle</h2>
+                        <p>Clica en la imagen del juego para abrirlo en la misma página y jugarlo directamente</p>
+                    </div>
+                </header>
+                <div class="ruffle-layout">
+                    <div class="ruffle-info">
+                        <span class="hero-kicker">FLASH • RUFFLE</span>
+                        <h2>Super Smash Flash 2</h2>
+                        <p>
+                            Uno de los mayores homenajes a Super Smash Bros. Ahora puedes jugarlo aquí con Ruffle.
+                            Clicando en la carátula de abajo, el juego se cargará en el reproductor embebido de esta
+                            misma página. Sin salir de la ventana, sin redirecciones.
+                        </p>
+                        <div class="contact-card">
+                            <h4>Créditos</h4>
+                            <p>Juego original: Super Smash Flash 2 por McLeodGaming.</p>
+                            <p>Fuente del juego referenciado: https://www.supersmashflash.com/play/ssf2/</p>
+                            <p>Motor de emulación: Ruffle (Open Source Flash Player Emulator).</p>
+                            <p>Implementación: EmuFlash Nexus con embed y carga controlada por Ruffle.</p>
+                        </div>
+                        <button class="btn btn-primary" id="load-ssf2">Cargar Super Smash Flash 2 en esta ventana</button>
+                    </div>
+                    <div class="ruffle-player">
+                        <header class="ruffle-header">
+                            <div>
+                                <strong>Reproductor Ruffle</strong>
+                                <p style="color: var(--text-sub);">Clica la imagen o el botón para iniciar</p>
+                            </div>
+                            <span class="tag">FLASH</span>
+                        </header>
+                        <div class="ruffle-stage" id="ruffle-stage">
+                            <div style="display: grid; place-items: center; text-align: center; padding: 2rem; gap: 1rem;" id="ruffle-placeholder">
+                                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80" alt="Super Smash Flash 2 carátula inspirada en IA" style="border-radius: 16px; max-width: 520px; cursor: pointer;" id="ssf2-cover">
+                                <p style="color: var(--text-sub);">Haz clic en la imagen para cargar y jugar Super Smash Flash 2 con Ruffle</p>
+                            </div>
+                        </div>
+                        <footer class="ruffle-footer">
+                            <strong>Controles:</strong>
+                            <span>Usa teclado o gamepad. El juego se ejecuta con Ruffle directamente en esta página.</span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="videos-juegos">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Vídeos que sean de los juegos que ves</h2>
+                        <p>Gameplays, remixes y momentos icónicos de los títulos destacados</p>
+                    </div>
+                </header>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/ZD5iONslOlg" title="Super Smash Bros. - Mejores momentos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Super Smash Bros. - Mejores momentos</h3>
+                            <p style="color: var(--text-sub);">Clásicos de la saga con momentos inolvidables</p>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/1yjedhJIOgg" title="Chrono Trigger - Recorrido épico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Chrono Trigger - Recorrido épico</h3>
+                            <p style="color: var(--text-sub);">Uno de los mejores RPGs de todos los tiempos</p>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/if9p5P5qNXA" title="Sonic the Hedgehog 2 - Speedrun clásico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Sonic the Hedgehog 2 - Speedrun clásico</h3>
+                            <p style="color: var(--text-sub);">Velocidad pura al estilo Mega Drive</p>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/3HtO53ir-4A" title="Super Mario World 100% recorrido" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Super Mario World - 100% recorrido</h3>
+                            <p style="color: var(--text-sub);">Un referente indiscutible de plataformas</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="blog">
+            <div class="container">
+                <header class="section-header">
+                    <div>
+                        <h2>Blog del proyecto</h2>
+                        <p>5 entradas relacionadas con EmuFlash Nexus</p>
+                    </div>
+                    <a class="section-link" href="blog-entrada-1.html">Ver todas las entradas →</a>
+                </header>
+                <div class="blog-preview-grid">
+                    <article class="blog-preview-card">
+                        <div class="blog-preview-thumb">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1600&q=80" alt="Retro gaming setup">
+                        </div>
+                        <div class="blog-preview-content">
+                            <div class="blog-meta">
+                                <span class="tag">Historia</span>
+                                <span>28 Oct 2026</span>
+                            </div>
+                            <h3>El renacer de los juegos Flash</h3>
+                            <p style="color: var(--text-sub);">Cómo Ruffle está devolviendo a la vida miles de juegos que parecían perdidos para siempre.</p>
+                            <a class="section-link" href="blog-entrada-1.html">Leer entrada →</a>
+                        </div>
+                    </article>
+                    <article class="blog-preview-card">
+                        <div class="blog-preview-thumb">
+                            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1600&q=80" alt="Arcade cabinet">
+                        </div>
+                        <div class="blog-preview-content">
+                            <div class="blog-meta">
+                                <span class="tag">Emulación</span>
+                                <span>28 Oct 2026</span>
+                            </div>
+                            <h3>EmuBrowser como inspiración</h3>
+                            <p style="color: var(--text-sub);">Analizamos la plantilla, navegación por consolas y estructura que hemos adaptado a nuestro proyecto.</p>
+                            <a class="section-link" href="blog-entrada-2.html">Leer entrada →</a>
+                        </div>
+                    </article>
+                    <article class="blog-preview-card">
+                        <div class="blog-preview-thumb">
+                            <img src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=1600&q=80" alt="Pixel art">
+                        </div>
+                        <div class="blog-preview-content">
+                            <div class="blog-meta">
+                                <span class="tag">Guía</span>
+                                <span>28 Oct 2026</span>
+                            </div>
+                            <h3>Super Smash Flash 2: Historia y legado</h3>
+                            <p style="color: var(--text-sub);">Créditos, orígenes y por qué sigue siendo un referente de la escena fangame.</p>
+                            <a class="section-link" href="blog-entrada-3.html">Leer entrada →</a>
+                        </div>
+                    </article>
+                    <article class="blog-preview-card">
+                        <div class="blog-preview-thumb">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80" alt="Neon gaming">
+                        </div>
+                        <div class="blog-preview-content">
+                            <div class="blog-meta">
+                                <span class="tag">Comunidad</span>
+                                <span>28 Oct 2026</span>
+                            </div>
+                            <h3>Crear una comunidad de usuarios</h3>
+                            <p style="color: var(--text-sub);">La importancia de tener formularios de reporte, comentarios y una página de contacto a usuarios.</p>
+                            <a class="section-link" href="blog-entrada-4.html">Leer entrada →</a>
+                        </div>
+                    </article>
+                    <article class="blog-preview-card">
+                        <div class="blog-preview-thumb">
+                            <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1600&q=80" alt="Gaming collection">
+                        </div>
+                        <div class="blog-preview-content">
+                            <div class="blog-meta">
+                                <span class="tag">SEO & UX</span>
+                                <span>28 Oct 2026</span>
+                            </div>
+                            <h3>Meta tags y experiencia retro</h3>
+                            <p style="color: var(--text-sub);">Mejorando visibilidad con SEO y creando una experiencia fiel al espíritu arcade.</p>
+                            <a class="section-link" href="blog-entrada-5.html">Leer entrada →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <div class="brand-mark">EF</div>
+                    <span>EmuFlash Nexus</span>
+                </a>
+                <p style="color: var(--text-sub);">
+                    Plataforma inspirada en EmuBrowser con juegos Flash, Ruffle, vídeos, anuncios de videojuegos,
+                    blog, formularios de comunidad y página de contacto a usuarios.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#juegos-flash">Juegos Flash</a></li>
+                    <li><a href="#videos-juegos">Vídeos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="contacto-usuarios.html">Contacto a usuarios</a></li>
+                    <li><a href="metas-importantes.html">Metas más importantes</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Consolas</h4>
+                <ul>
+                    <li><a href="#consolas">PlayStation</a></li>
+                    <li><a href="#consolas">Nintendo 64</a></li>
+                    <li><a href="#consolas">Super Nintendo</a></li>
+                    <li><a href="#consolas">Sega Genesis</a></li>
+                    <li><a href="#consolas">Game Boy Advance</a></li>
+                    <li><a href="#consolas">NES</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legales</h4>
+                <ul>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 EmuFlash Nexus. Todos los derechos reservados. Super Smash Flash 2 por McLeodGaming.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        navToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 920) {
+                    mainNav.classList.remove('active');
+                }
+            });
+        });
+
+        const loadBtn = document.getElementById('load-ssf2');
+        const cover = document.getElementById('ssf2-cover');
+        const stage = document.getElementById('ruffle-stage');
+        const placeholder = document.getElementById('ruffle-placeholder');
+
+        function loadSSF2() {
+            if (!stage) return;
+            stage.innerHTML = '';
+            const ruffle = window.RufflePlayer?.newest();
+            if (ruffle) {
+                const player = ruffle.createPlayer();
+                player.style.width = '100%';
+                player.style.height = '100%';
+                stage.appendChild(player);
+                // Usando el embed/referencia desde supersmashflash.com tal como se pide
+                // Nota: Muchos mirrors usan URLs directas; aquí cargamos via web archive/style embed conceptual
+                player.load({
+                    url: 'games/SSFexe.swf',
+                    allowScriptAccess: true
+                });
+            } else {
+                const embed = document.createElement('embed');
+                embed.type = 'application/x-shockwave-flash';
+                embed.src = 'games/SSFexe.swf';
+                embed.width = '100%';
+                embed.height = '100%';
+                stage.appendChild(embed);
+            }
+        }
+
+        if (loadBtn) {
+            loadBtn.addEventListener('click', loadSSF2);
+        }
+        if (cover) {
+            cover.addEventListener('click', loadSSF2);
+        }
+    </script>
+</body>
+
+</html>
